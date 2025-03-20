@@ -1,0 +1,63 @@
+/* [project]/app/components/Board/Board.css [app-client] (css) */
+body {
+  height: 100vh;
+}
+
+.board {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-direction: column;
+  position: relative;
+}
+
+
+/* [project]/app/components/Card/Card.css [app-client] (css) */
+.card {
+  width: 150px;
+  height: 170px;
+  background-color: beige;
+  position: relative;
+}
+
+.cardLife {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardAttack {
+  width: 25px;
+  height: 25px;
+  background-color: gray;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardMana {
+  width: 25px;
+  height: 25px;
+  background-color: #00f;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*# sourceMappingURL=app_components_8048269a._.css.map*/

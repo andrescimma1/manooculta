@@ -1,0 +1,9 @@
+.backCard {
+    display: flex;
+    width: 150px;
+    height: 170px;
+    background-color: black;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }

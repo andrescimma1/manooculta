@@ -1,0 +1,16 @@
+/* [project]/app/components/Board/Board.css [app-client] (css) */
+body {
+  height: 100vh;
+}
+
+.board {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-direction: column;
+  position: relative;
+}
+
+/*# sourceMappingURL=app_components_Board_Board_b52d8e88.css.map*/

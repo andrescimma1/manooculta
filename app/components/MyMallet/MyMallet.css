@@ -1,0 +1,19 @@
+.mallet {
+    width: 150px;
+    height: 170px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Añadir esta línea */
+    bottom: 0; /* Añadir esta línea */
+    left: 0; /* Añadir esta línea */
+}
+
+  .cardsmallet{
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

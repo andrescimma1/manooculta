@@ -1,0 +1,129 @@
+/* [project]/app/components/Board/Board.css [app-client] (css) */
+body {
+  height: 100vh;
+}
+
+.board {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-direction: column;
+  position: relative;
+}
+
+
+/* [project]/app/components/Card/Card.css [app-client] (css) */
+.card {
+  width: 150px;
+  height: 170px;
+  background-color: beige;
+  position: relative;
+}
+
+.cardLife {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardAttack {
+  width: 25px;
+  height: 25px;
+  background-color: gray;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardMana {
+  width: 25px;
+  height: 25px;
+  background-color: #00f;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* [project]/app/components/MyMallet/MyMallet.css [app-client] (css) */
+.mallet {
+  width: 150px;
+  height: 170px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.cardsmallet {
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* [project]/app/components/MyHand/MyHand.css [app-client] (css) */
+.allCardsOnHand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 3rem;
+  position: absolute;
+  bottom: 0;
+}
+
+
+/* [project]/app/components/BackCard/BackCard.css [app-client] (css) */
+.backCard {
+  display: flex;
+  width: 150px;
+  height: 170px;
+  background-color: #000;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* [project]/app/components/EnemyHand/EnemyHand.css [app-client] (css) */
+.enemyHand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 3rem;
+  position: absolute;
+  top: 0;
+  flex-direction: row;
+}
+
+
+/*# sourceMappingURL=app_components_1a52eaff._.css.map*/

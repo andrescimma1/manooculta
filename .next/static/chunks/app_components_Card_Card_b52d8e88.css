@@ -1,0 +1,46 @@
+/* [project]/app/components/Card/Card.css [app-client] (css) */
+.card {
+  width: 150px;
+  height: 170px;
+  background-color: beige;
+  position: relative;
+}
+
+.cardLife {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardAttack {
+  width: 25px;
+  height: 25px;
+  background-color: gray;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardMana {
+  width: 25px;
+  height: 25px;
+  background-color: #00f;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=app_components_Card_Card_b52d8e88.css.map*/

@@ -1,0 +1,22 @@
+/* [project]/app/components/EnemyMallet/EnemyMallet.css [app-client] (css) */
+.enemymallet {
+  width: 150px;
+  height: 170px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.enemycardsmallet {
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=app_components_EnemyMallet_EnemyMallet_b52d8e88.css.map*/
