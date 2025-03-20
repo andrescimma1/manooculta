@@ -1,0 +1,43 @@
+.card {
+  width: 150px;
+  height: 170px;
+  background-color: beige;
+  position: relative;
+}
+
+.cardLife {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardAttack {
+  width: 25px;
+  height: 25px;
+  background-color: grey;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardMana {
+  width: 25px;
+  height: 25px;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
