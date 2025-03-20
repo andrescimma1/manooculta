@@ -1,0 +1,12 @@
+/* [project]/app/components/BackCard/BackCard.css [app-client] (css) */
+.backCard {
+  display: flex;
+  width: 150px;
+  height: 170px;
+  background-color: #000;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=app_components_BackCard_BackCard_b52d8e88.css.map*/

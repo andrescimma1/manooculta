@@ -1,0 +1,19 @@
+.enemymallet {
+    width: 150px;
+    height: 170px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Añadir esta línea */
+    top: 0; /* Añadir esta línea */
+    right: 0; /* Añadir esta línea */
+}
+
+.enemycardsmallet{
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

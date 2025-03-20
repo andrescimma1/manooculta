@@ -1,0 +1,55 @@
+/* [project]/app/components/Board/Board.css [app-client] (css) */
+body {
+  height: 100vh;
+}
+
+.board {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-direction: column;
+  position: relative;
+}
+
+
+/* [project]/app/components/MyMallet/myMallet.css [app-client] (css) */
+.mallet {
+  width: 150px;
+  height: 170px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.cardsmallet {
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* [project]/app/components/MyHand/myHand.css [app-client] (css) */
+.allCardsOnHand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 3rem;
+  position: absolute;
+  bottom: 0;
+}
+
+
+/*# sourceMappingURL=app_components_df0e82c2._.css.map*/
