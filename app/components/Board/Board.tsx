@@ -6,7 +6,6 @@ import Hand from "../MyHand/MyHand";
 import EnemyHand from "../EnemyHand/EnemyHand";
 import EnemyMallet from "../EnemyMallet/EnemyMallet";
 //alt + z para ajustar el texto
-//hola
 
 export default function Board() {
   return (
