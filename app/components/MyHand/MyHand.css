@@ -1,14 +1,14 @@
-.allCardsOnHand{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 0;
-    margin: 10px;
-    list-style: none;
-    gap: 10px; /* Espacio entre las cartas */
-    position: absolute;
-    bottom: 0;
-    overflow-x: auto; /* Para permitir el desplazamiento horizontal si hay muchas cartas */
+.allCardsOnHand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  margin: 10px;
+  list-style: none;
+  gap: 20px; /* Espacio entre las cartas */
+  position: absolute;
+  bottom: 0;
+  overflow-x: auto; /* Para permitir el desplazamiento horizontal si hay muchas cartas */
 }

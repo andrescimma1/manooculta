@@ -27,7 +27,7 @@ export default function Card({ card }: CardProps) {
       <div className="cardAttack">{card.attack}</div>
       <div className="cardMana">{card.mana}</div>
       <div className="cardName">{card.name}</div>
-      {card.effect && <div className="cardEffect">{card.effect}</div>}
+      {/* {card.effect && <div className="cardEffect">{card.effect}</div>} */}
     </div>
   );
 }

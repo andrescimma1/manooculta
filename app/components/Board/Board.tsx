@@ -15,8 +15,8 @@ export default function Board() {
       <Card card={dragon[0]} />
       <Mallet />
       <Hand />
-      <EnemyHand />
-      <EnemyMallet />
+      {/* <EnemyHand /> */}
+      {/* <EnemyMallet /> */}
     </div>
   );
 }

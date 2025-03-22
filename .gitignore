@@ -1,1 +1,3 @@
 node_modules
+*.webpack.hot-update.json
+.next/

@@ -1,25 +1,23 @@
 // MyHand.tsx
 "use client";
 
-import React from 'react';
-import Card from '../Card/Card';
+import React from "react";
+import Card from "../Card/Card";
 import "./MyHand.css";
-import { useDeck } from '../DeckManager';
+import { useGlobalContext } from "@/app/context/GlobalContext";
 
 function Hand() {
-    const { hand, drawCard } = useDeck(); // Obtén la mano y la función para sacar una carta
-    console.log(hand); // Verifica las cartas en la consola
+  const {
+    state: { hand },
+  } = useGlobalContext();
 
-    return (
-        <div>
-            <button onClick={drawCard}>Tomar carta</button> {/* Botón para sacar una carta */}
-            <div className="allCardsOnHand">
-                {hand.map((card) => (
-                    <Card key={card.id} card={card} /> // Pasa cada carta al componente Card
-                ))}
-            </div>
-        </div>
-    );
+  return (
+    <div className="allCardsOnHand">
+      {hand.map((card) => (
+        <Card key={card.id} card={card} /> // Pasa cada carta al componente Card
+      ))}
+    </div>
+  );
 }
 
 export default Hand;
