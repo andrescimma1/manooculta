@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "name": "Drake",
+    "attack": 10,
+    "mana": 5,
+    "image": "/jpg/drake.jpg",
+    "life": 10,
+    "effect": null
+  }
+]

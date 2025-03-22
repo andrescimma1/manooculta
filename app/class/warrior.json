@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "name": "Ragnar Warwind",
+    "attack": 10,
+    "mana": 5,
+    "life": 10,
+    "image": "/jpg/drake.jpg",
+    "effect": null
+  }
+]
