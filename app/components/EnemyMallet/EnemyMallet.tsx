@@ -1,12 +1,16 @@
-import React from 'react'
+// Mallet.js
+"use client"; // Agrega esta línea al inicio del archivo
+
+import React from 'react';
 import "./EnemyMallet.css";
+import { useDeck } from '../DeckManager';
 
-function EnemyMallet() {
-  return (
-    <div className="enemymallet">
-        <div className="enemycardsmallet">25/40</div>
-    </div>
-  )
+export default function Mallet() {
+    const { deckCount, drawCard } = useDeck(40);
+
+    return (
+        <div className="mallet" onClick={drawCard}>
+            <div className="cardsmallet">{deckCount}/40</div>
+        </div>
+    );
 }
-
-export default EnemyMallet

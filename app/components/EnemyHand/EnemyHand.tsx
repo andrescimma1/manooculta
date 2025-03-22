@@ -1,18 +1,21 @@
-import React from 'react'
-import BackCard from '../BackCard/BackCard'
+// Hand.js
+"use client"; // Agrega esta línea al inicio del archivo
+
+import React from 'react';
+import Card from '../Card/Card';
 import "./EnemyHand.css";
+import { useDeck } from '../DeckManager';
 
+function Hand() {
+    const { hand } = useDeck(40);
 
-function EnemyHand() {
-  return (
-    <div className='enemyHand'>
-    <BackCard _number={1}/>
-    <BackCard _number={2}/>
-    <BackCard _number={3}/>
-    <BackCard _number={4}/>
-    <BackCard _number={5}/>
-    </div>
-  )
+    return (
+        <div className="allCardsOnHand">
+            {hand.map((card, index) => (
+                <Card key={index} card={card} />
+            ))}
+        </div>
+    );
 }
 
-export default EnemyHand
+export default Hand;

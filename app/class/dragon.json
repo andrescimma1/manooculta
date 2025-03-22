@@ -7,5 +7,86 @@
     "image": "/jpg/drake.jpg",
     "life": 10,
     "effect": null
+  },
+  {
+    "id": 2,
+    "name": "Inferno Dragon",
+    "attack": 12,
+    "mana": 7,
+    "image": "/jpg/inferno-dragon.jpg",
+    "life": 15,
+    "effect": "Burns enemies for 2 damage per turn"
+  },
+  {
+    "id": 3,
+    "name": "Frost Dragon",
+    "attack": 9,
+    "mana": 6,
+    "image": "/jpg/frost-dragon.jpg",
+    "life": 14,
+    "effect": "Freezes enemies, reducing their attack by 1"
+  },
+  {
+    "id": 4,
+    "name": "Storm Dragon",
+    "attack": 11,
+    "mana": 8,
+    "image": "/jpg/storm-dragon.jpg",
+    "life": 13,
+    "effect": "Summons lightning strikes on random enemies"
+  },
+  {
+    "id": 5,
+    "name": "Venom Dragon",
+    "attack": 8,
+    "mana": 5,
+    "image": "/jpg/venom-dragon.jpg",
+    "life": 12,
+    "effect": "Poisons enemies, dealing 3 damage over time"
+  },
+  {
+    "id": 6,
+    "name": "Ancient Dragon",
+    "attack": 15,
+    "mana": 10,
+    "image": "/jpg/ancient-dragon.jpg",
+    "life": 20,
+    "effect": "Immune to spells and effects"
+  },
+  {
+    "id": 7,
+    "name": "Shadow Dragon",
+    "attack": 10,
+    "mana": 6,
+    "image": "/jpg/shadow-dragon.jpg",
+    "life": 11,
+    "effect": "Can become invisible, avoiding attacks"
+  },
+  {
+    "id": 8,
+    "name": "Golden Dragon",
+    "attack": 13,
+    "mana": 9,
+    "image": "/jpg/golden-dragon.jpg",
+    "life": 18,
+    "effect": "Drops gold coins when defeated"
+  },
+  {
+    "id": 9,
+    "name": "Crystal Dragon",
+    "attack": 7,
+    "mana": 4,
+    "image": "/jpg/crystal-dragon.jpg",
+    "life": 16,
+    "effect": "Reflects 50% of damage back to the attacker"
+  },
+  {
+    "id": 10,
+    "name": "Chaos Dragon",
+    "attack": 14,
+    "mana": 12,
+    "image": "/jpg/chaos-dragon.jpg",
+    "life": 22,
+    "effect": "Randomly changes its attack and defense each turn"
   }
 ]
