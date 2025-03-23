@@ -69,10 +69,10 @@ export default function Mallet() {
         {/* Indicadores de vida y maná */}
         <div className="indicators">
           <div className="life-indicator">
-            <span role="img" aria-label="heart">❤️</span> {life}
+            <span role="img" aria-label="heart">❤️100</span> {life}
           </div>
           <div className="mana-indicator">
-            <span role="img" aria-label="mana">🔮</span> {mana}
+            <span role="img" aria-label="mana">🔮1</span> {mana}
           </div>
         </div>
   
