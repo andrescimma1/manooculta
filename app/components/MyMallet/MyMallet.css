@@ -1,3 +1,17 @@
+/* MyMallet.css */
+.mallet-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: transparent;
+  z-index: 1000; /* Asegura que el contenedor esté por encima de otros elementos */
+}
+
+
 .mallet {
   width: 150px;
   height: 170px;
@@ -5,16 +19,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute; /* Añadir esta línea */
-  bottom: 0; /* Añadir esta línea */
-  left: 0; /* Añadir esta línea */
-  z-index: 999;
+  cursor: pointer;
+  position: relative;
+  z-index: 1002; /* Asegura que el mazo esté por encima de la mano */
 }
 
 .cardsmallet {
-  bottom: 0;
-  color: white;
+  color: white; /* Color del texto */
+  font-size: 20px; /* Tamaño del texto */
+  pointer-events: none; /* Desactiva los eventos del texto */
+}
+
+.hand-container {
   display: flex;
-  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  overflow-x: auto;
+  background-color: transparent;
+  position: fixed;
+  bottom: 20px;
+  left: 180px; /* Coloca la mano a la derecha del mazo */
+  z-index: 1001; /* Asegura que la mano esté por debajo del mazo */
+}
+
+.indicators {
+  display: flex;
+  flex-direction: column; /* Coloca los indicadores en una columna */
+  gap: 10px; /* Espacio entre los indicadores */
+}
+
+.life-indicator,
+.mana-indicator {
+  display: flex;
   align-items: center;
+  gap: 5px; /* Espacio entre el ícono y el número */
+  font-size: 20px;
+}
+
+.life-indicator {
+  color: white; /* Color para el indicador de vida */
+}
+
+.mana-indicator {
+  color: white; /* Color para el indicador de maná */
 }

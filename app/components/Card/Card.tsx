@@ -1,4 +1,4 @@
-// Card.tsx
+import React, { memo } from "react"; // Importa memo
 import "./Card.css";
 
 interface CardProps {
@@ -13,7 +13,7 @@ interface CardProps {
   };
 }
 
-export default function Card({ card }: CardProps) {
+const Card = memo(({ card }: CardProps) => {
   return (
     <div
       className="card"
@@ -23,11 +23,22 @@ export default function Card({ card }: CardProps) {
         backgroundPosition: "center",
       }}
     >
-      <div className="cardLife">{card.life}</div>
-      <div className="cardAttack">{card.attack}</div>
-      <div className="cardMana">{card.mana}</div>
-      <div className="cardName">{card.name}</div>
-      {/* {card.effect && <div className="cardEffect">{card.effect}</div>} */}
+      {/* Vida (arriba a la izquierda) */}
+      <div className="life-circle">
+        <span>{card.life}</span>
+      </div>
+
+      {/* Maná (arriba a la derecha) */}
+      <div className="mana-circle">
+        <span>{card.mana}</span>
+      </div>
+
+      {/* Ataque (abajo a la izquierda) */}
+      <div className="attack-circle">
+        <span>{card.attack}</span>
+      </div>
     </div>
   );
-}
+});
+
+export default Card; // Exporta el componente memoizado

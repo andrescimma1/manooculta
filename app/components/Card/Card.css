@@ -1,43 +1,47 @@
+/* Card.css */
 .card {
-  width: 130px;
-  height: 195px;
-  background-color: beige;
-  position: relative;
+  width: 100px; /* Ancho de la carta */
+  height: 150px; /* Alto de la carta */
+  border: 1px solid #000;
+  border-radius: 8px;
+  position: relative; /* Para posicionar los círculos de manera absoluta */
+  background-color: transparent; /* Fondo transparente */
+  overflow: hidden; /* Para que los círculos no se salgan de la carta */
 }
 
-.cardLife {
-  width: 25px;
-  height: 25px;
-  background-color: red;
+/* Estilos para los círculos */
+.life-circle,
+.mana-circle,
+.attack-circle {
   position: absolute;
-  top: 0;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30px; /* Tamaño del círculo */
+  height: 30px; /* Tamaño del círculo */
+  border-radius: 50%; /* Hace que el div sea un círculo */
+  color: white; /* Color del texto */
+  font-size: 14px;
+  font-weight: bold;
 }
 
-.cardAttack {
-  width: 25px;
-  height: 25px;
-  background-color: grey;
-  position: absolute;
-  bottom: 0;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Vida (arriba a la izquierda) */
+.life-circle {
+  top: 5px;
+  left: 5px;
+  background-color: red; /* Fondo rojo */
 }
 
-.cardMana {
-  width: 25px;
-  height: 25px;
-  background-color: blue;
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Maná (arriba a la derecha) */
+.mana-circle {
+  top: 5px;
+  right: 5px;
+  background-color: blue; /* Fondo azul */
+}
+
+/* Ataque (abajo a la izquierda) */
+.attack-circle {
+  bottom: 5px;
+  left: 5px;
+  background-color: gray; /* Fondo gris */
 }
