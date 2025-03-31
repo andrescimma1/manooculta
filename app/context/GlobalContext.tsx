@@ -2,7 +2,6 @@
 
 import React, { createContext, useState, useContext, ReactNode } from "react";
 
-// Definir el tipo de una carta (Card)
 interface Card {
   id: number;
   name: string;
@@ -13,14 +12,17 @@ interface Card {
   effect: string | null;
 }
 
-// Definir el tipo del estado global
 interface GlobalState {
   hand: Card[];
-  setHand: React.Dispatch<React.SetStateAction<Card[]>>; // ✅ Asegurar que setHand esté definido
+  life: number;
+  mana: number;
 }
 
 interface GlobalContextType {
   state: GlobalState;
+  setHand: (cards: Card[]) => void;
+  setLife: (life: number) => void;
+  setMana: (mana: number) => void;
 }
 
 const GlobalContext = createContext<GlobalContextType | undefined>(undefined);
@@ -30,17 +32,24 @@ interface GlobalProviderProps {
 }
 
 export const GlobalProvider: React.FC<GlobalProviderProps> = ({ children }) => {
-  const [hand, setHand] = useState<Card[]>([]); // ✅ Estado de la mano en el contexto global
+  const [state, setState] = useState<GlobalState>({
+    hand: [],
+    life: 100, // Valor inicial
+    mana: 10, // Valor inicial
+  });
+
+  const setHand = (hand: Card[]) => setState(prev => ({ ...prev, hand }));
+  const setLife = (life: number) => setState(prev => ({ ...prev, life }));
+  const setMana = (mana: number) => setState(prev => ({ ...prev, mana }));
 
   return (
-    <GlobalContext.Provider value={{ state: { hand, setHand } }}>
+    <GlobalContext.Provider value={{ state, setHand, setLife, setMana }}>
       {children}
     </GlobalContext.Provider>
   );
 };
 
-// Hook personalizado para acceder al contexto global
-export const useGlobalContext = (): GlobalContextType => {
+export const useGlobalContext = () => {
   const context = useContext(GlobalContext);
   if (!context) {
     throw new Error("useGlobalContext must be used within a GlobalProvider");

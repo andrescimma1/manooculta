@@ -25,19 +25,14 @@ const shuffleDeck = (deck: Card[]): Card[] => {
   return shuffledDeck;
 };
 
-export default function Mallet() {
+export default function MyMallet() {
   const [deck, setDeck] = useState<Card[]>(shuffleDeck(dragons));
-  const {
-    state: { hand, life, mana },
-    setHand,
-    setLife,
-    setMana
-  } = useGlobalContext();
+  const { state: { hand, life, mana }, setHand } = useGlobalContext();
 
   const drawCard = useCallback(() => {
     if (deck.length > 0) {
       const newCard = deck[0];
-      setDeck((prevDeck) => prevDeck.slice(1));
+      setDeck(prevDeck => prevDeck.slice(1));
       setHand([...hand, newCard]);
     }
   }, [deck, hand, setHand]);
@@ -64,9 +59,11 @@ export default function Mallet() {
         </div>
       </div>
 
-      <Hand onDragStart={function (e: React.DragEvent, card: any): void {
-        throw new Error("Function not implemented.");
-      } } />
+      <Hand 
+        onDragStart={(e, card) => {
+          e.dataTransfer.setData('text/plain', card.id.toString());
+        }} 
+      />
     </div>
   );
 }
