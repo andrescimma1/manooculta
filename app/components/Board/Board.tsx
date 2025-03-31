@@ -11,7 +11,7 @@ export default function Board() {
   const { state: { hand }, setHand } = useGlobalContext();
   const [playerField, setPlayerField] = useState<any[]>([]);
   const [enemyField, setEnemyField] = useState<any[]>([
-    { id: 999, name: "Slime", attack: 2, mana: 1, image: "", life: 5, effect: null }
+    { id: 999, name: "Slime", attack: 2, mana: 1, image: "", life: 30, effect: null }
   ]);
   const [draggedCard, setDraggedCard] = useState<any>(null);
 
