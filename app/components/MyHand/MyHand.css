@@ -1,13 +1,21 @@
-/* MyHand.css */
 .allCardsOnHand {
   display: flex;
   gap: 10px;
   padding: 10px;
   overflow-x: auto;
-  background-color: transparent;
   position: fixed;
-  bottom: 20px; /* Coloca la mano en la parte inferior */
-  left: 50%; /* Centra el contenedor horizontalmente */
-  transform: translateX(-50%); /* Ajusta el centrado */
-  z-index: 1001; /* Asegura que la mano esté por debajo del mazo */
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001;
+}
+
+.draggable-card {
+  cursor: grab;
+  transition: transform 0.1s ease;
+}
+
+.draggable-card:active {
+  cursor: grabbing;
+  transform: scale(1.05);
 }

@@ -5,17 +5,24 @@ import Card from "../Card/Card";
 import "./MyHand.css";
 import { useGlobalContext } from "../../context/GlobalContext";
 
-function Hand() {
-  const {
-    state: { hand },
-  } = useGlobalContext(); // Accede a las cartas en la mano desde el contexto global
+interface HandProps {
+  onDragStart: (e: React.DragEvent, card: any) => void;
+}
 
-  console.log("Cartas en la mano (Hand component):", hand); // Verifica en la consola
+function Hand({ onDragStart }: HandProps) {
+  const { state: { hand } } = useGlobalContext();
 
   return (
     <div className="allCardsOnHand">
       {hand.map((card) => (
-        <Card key={card.id} card={card} /> // Muestra cada carta en la mano
+        <div
+          key={card.id}
+          draggable
+          onDragStart={(e) => onDragStart(e, card)}
+          className="draggable-card"
+        >
+          <Card card={card} />
+        </div>
       ))}
     </div>
   );
